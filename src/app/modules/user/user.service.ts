@@ -1,7 +1,7 @@
-import { PrismaClient, UserRole } from "@prisma/client";
+import { UserRole } from "@prisma/client";
 import bcrypt from "bcrypt";
+import prisma from "../../../Shared/prisma";
 
-const prisma = new PrismaClient();
 
 const createAdminIntoDB = async (data: any) => {
   console.log(data);
